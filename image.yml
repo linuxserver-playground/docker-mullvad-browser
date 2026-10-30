@@ -10,6 +10,9 @@ upstream:
   version:
     type: github_release
     repo: mullvad/mullvad-browser
+    require_assets:
+      - asset: '^mullvad\-browser\-linux\-x86_64\-.*\.tar\.xz$'
+      - asset: '^mullvad\-browser\-linux\-x86_64\-.*\.tar\.xz\.asc$'
   notes:
     type: github_release
     repo: mullvad/mullvad-browser
